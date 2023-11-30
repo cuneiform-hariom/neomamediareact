@@ -6,73 +6,73 @@ export default function Sams() {
     document.title = "Sam's Pizza Casestudy"
     return (
         <>
-            <main class="singlecases">
-                <div class="s_casehero">
-                    <img src={require("../assets/images/casestudy/cshero1.svg").default} alt="" class="imgtop" />
-                    <img src={require("../assets/images/casestudy/cshero2.svg").default} alt="" class="imgright" />
-                    <div class="casetitle">
+            <main className="singlecases">
+                <div className="s_casehero">
+                    <img src={require("../assets/images/casestudy/cshero1.svg").default} alt="" className="imgtop" />
+                    <img src={require("../assets/images/casestudy/cshero2.svg").default} alt="" className="imgright" />
+                    <div className="casetitle">
                         <h2>Digital footprint by implementing strategies that engage a broader customers</h2>
                     </div>
-                    <div class="casemeta">
-                        <div class="metabox">
+                    <div className="casemeta">
+                        <div className="metabox">
                             <p>CLIENT</p>
                             <h4>Sam's Pizza</h4>
                         </div>
-                        <div class="metabox">
+                        <div className="metabox">
                             <p>SERVICES</p>
                             <h4>Marketing Strategy & Insights</h4>
                             <h4>Media & Channel Activation</h4>
                         </div>
-                        <div class="metabox">
+                        <div className="metabox">
                             <p>DURATION</p>
                             <h4>11 Months</h4>
                         </div>
-                        <div class="metabox">
+                        <div className="metabox">
                             <p>WEBSITE</p>
                             <h4>samspizza.in</h4>
                         </div>
                     </div>
                 </div>
-                <div class="singlecasecontent">
-                    <img src={require("../assets/images/casestudy/Group1.svg").default} alt="" class="grp1" />
-                    <img src={require("../assets/images/casestudy/group2.svg").default} alt="" class="grp2" />
-                    <img src={require("../assets/images/casestudy/Group3.svg").default} alt="" class="grp3" />
-                    <img src={require("../assets/images/casestudy/Group4.svg").default} alt="" class="grp4" />
-                    <div class="casecontent">
-                        <div class="caseimg innerdiv">
-                            <img class="cbanner" src={require("../assets/images/casestudy/Samsbanner.webp")} alt="" />
+                <div className="singlecasecontent">
+                    <img src={require("../assets/images/casestudy/Group1.svg").default} alt="" className="grp1" />
+                    <img src={require("../assets/images/casestudy/group2.svg").default} alt="" className="grp2" />
+                    <img src={require("../assets/images/casestudy/Group3.svg").default} alt="" className="grp3" />
+                    <img src={require("../assets/images/casestudy/Group4.svg").default} alt="" className="grp4" />
+                    <div className="casecontent">
+                        <div className="caseimg innerdiv">
+                            <img className="cbanner" src={require("../assets/images/casestudy/Samsbanner.webp")} alt="" />
                         </div>
-                        <div class="casegrid innerdiv tcase">
-                            <div class="cimg">
+                        <div className="casegrid innerdiv tcase">
+                            <div className="cimg">
                                 <img src={require("../assets/images/casestudy/samsc.png")} alt="" />
                             </div>
-                            <div class="rightccontent">
-                                <h3 class="cttle">Sam's Pizza's Success Story</h3>
+                            <div className="rightccontent">
+                                <h3 className="cttle">Sam's Pizza's Success Story</h3>
                                 <p>Sam's Pizza is a one-of-a-kind culinary venture that aspires to reinvent the Italian pizza experience through a Western lens while infusing it with the rich flavours of India. The name "Sam's Pizza" honors the American troops who discovered and appreciated the joys of Italian pizza while stationed in Italy, and then experimented with several changes upon their return, giving rise to the legendary New Yorker Pizza. The objective of Sam's Pizza is to provide traditional Italian pizza with a distinctly American twist, ensuring a gastronomic encounter that tantalizes the palate while upholding unwavering quality standards.  </p>
                             </div>
                         </div>
-                        <div class="casegrid innerdiv ncase">
-                            <div class="numberc">
-                                <img src={require("../assets/images/casestudy/Star.svg").default} alt="" class="str" />
+                        <div className="casegrid innerdiv ncase">
+                            <div className="numberc">
+                                <img src={require("../assets/images/casestudy/Star.svg").default} alt="" className="str" />
                                 <h3>01</h3>
                             </div>
-                            <div class="rightccontent">
-                                <h3 class="cttle">THE CHALLENGE</h3>
+                            <div className="rightccontent">
+                                <h3 className="cttle">THE CHALLENGE</h3>
                                 <p>Starting a pizzeria with a fresh concept is a thrilling yet difficult endeavor. In its quest to reshape the pizza landscape, Sam's Pizza encountered various challenges. The most significant problem was catering to a larger client base, increasing foot traffic to their restaurants, and thereby increasing sales.</p>
                             </div>
                         </div>
-                        <div class="caseimg innerdiv">
-                            <img src={require("../assets/images/casestudy/Star.svg").default} alt="" class="topstar" />
-                            <img src={require("../assets/images/casestudy/Star.svg").default} alt="" class="bottomstar" />
-                            <img class="cbanner" src={require("../assets/images/casestudy/samsbanner2.webp")} alt="" />
+                        <div className="caseimg innerdiv">
+                            <img src={require("../assets/images/casestudy/Star.svg").default} alt="" className="topstar" />
+                            <img src={require("../assets/images/casestudy/Star.svg").default} alt="" className="bottomstar" />
+                            <img className="cbanner" src={require("../assets/images/casestudy/samsbanner2.webp")} alt="" />
                         </div>
-                        <div class="casegrid innerdiv ncase">
-                            <div class="numberc nodasline">
+                        <div className="casegrid innerdiv ncase">
+                            <div className="numberc nodasline">
                                 <h3>02</h3>
                             </div>
-                            <div class="rightccontent">
-                                <h3 class="cttle">SOLUTIONS BY NEOMA</h3>
-                                <div class="bulletlist starlist">
+                            <div className="rightccontent">
+                                <h3 className="cttle">SOLUTIONS BY NEOMA</h3>
+                                <div className="bulletlist starlist">
                                     <h4>Brand Awareness Campaigns</h4>
                                     <p>Recognizing the importance of brand identification, Neoma devised and carried out a comprehensive plan to market Sam's Pizza to a wider audience. To raise brand recognition, this included targeted digital and programmatic advertising, social media promotions, and collaborations with local influencers.</p>
                                     <p>Neoma's brand awareness campaigns were a big success, resulting in a 30% increase in sales. Sam's Pizza was able to convert curiosity into foot traffic, resulting in a large increase in income by effectively reaching out to potential customers and stimulating their interest.</p>

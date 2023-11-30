@@ -6,47 +6,47 @@ export default function Arena() {
     document.title = "Arena Casestudy"
     return (
         <>
-            <main class="singlecases">
-                <div class="s_casehero">
-                    <img src={require("../assets/images/casestudy/cshero1.svg").default} alt="" class="imgtop" />
-                    <img src={require("../assets/images/casestudy/cshero2.svg").default} alt="" class="imgright" />
-                    <div class="casetitle">
+            <main className="singlecases">
+                <div className="s_casehero">
+                    <img src={require("../assets/images/casestudy/cshero1.svg").default} alt="" className="imgtop" />
+                    <img src={require("../assets/images/casestudy/cshero2.svg").default} alt="" className="imgright" />
+                    <div className="casetitle">
                         <h2>Strategic Digital Navigation Boosts Visibility Across Online Channels</h2>
                     </div>
-                    <div class="casemeta">
-                        <div class="metabox">
+                    <div className="casemeta">
+                        <div className="metabox">
                             <p>CLIENT</p>
                             <h4>Arena Animation</h4>
                         </div>
-                        <div class="metabox">
+                        <div className="metabox">
                             <p>SERVICES</p>
                             <h4>Marketing Strategy & Insights</h4>
                         </div>
-                        <div class="metabox">
+                        <div className="metabox">
                             <p>DURATION</p>
                             <h4>3 Years</h4>
                         </div>
-                        <div class="metabox">
+                        <div className="metabox">
                             <p>WEBSITE</p>
                             <h4>arena-animation.in</h4>
                         </div>
                     </div>
                 </div>
-                <div class="singlecasecontent">
-                    <img src={require("../assets/images/casestudy/Group1.svg").default} alt="" class="grp1" />
-                    <img src={require("../assets/images/casestudy/group2.svg").default} alt="" class="grp2" />
-                    <img src={require("../assets/images/casestudy/Group3.svg").default} alt="" class="grp3" />
-                    <img src={require("../assets/images/casestudy/Group4.svg").default} alt="" class="grp4" />
-                    <div class="casecontent">
-                        <div class="caseimg innerdiv">
-                            <img class="cbanner" src={require("../assets/images/casestudy/Arenabanner.webp")} alt="" />
+                <div className="singlecasecontent">
+                    <img src={require("../assets/images/casestudy/Group1.svg").default} alt="" className="grp1" />
+                    <img src={require("../assets/images/casestudy/group2.svg").default} alt="" className="grp2" />
+                    <img src={require("../assets/images/casestudy/Group3.svg").default} alt="" className="grp3" />
+                    <img src={require("../assets/images/casestudy/Group4.svg").default} alt="" className="grp4" />
+                    <div className="casecontent">
+                        <div className="caseimg innerdiv">
+                            <img className="cbanner" src={require("../assets/images/casestudy/Arenabanner.webp")} alt="" />
                         </div>
-                        <div class="casegrid innerdiv tcase">
-                            <div class="cimg">
+                        <div className="casegrid innerdiv tcase">
+                            <div className="cimg">
                                 <img src={require("../assets/images/casestudy/arenac.png")} alt="" />
                             </div>
-                            <div class="rightccontent">
-                                <h3 class="cttle">Arena Animation – An Introduction </h3>
+                            <div className="rightccontent">
+                                <h3 className="cttle">Arena Animation – An Introduction </h3>
                                 <p>Arena Animation is a top Indian animation school, with thousands of student success stories.
                                     It was founded in 1996 by Aptech Limited. Arena Animation focuses on Indian media and
                                     entertainment talent. For nearly 30 years, our client has led non-formal vocational training
@@ -61,13 +61,13 @@ export default function Arena() {
                                     and teamwork. </p>
                             </div>
                         </div>
-                        <div class="casegrid innerdiv ncase">
-                            <div class="numberc">
-                                <img src={require("../assets/images/casestudy/Star.svg").default} alt="" class="str" />
+                        <div className="casegrid innerdiv ncase">
+                            <div className="numberc">
+                                <img src={require("../assets/images/casestudy/Star.svg").default} alt="" className="str" />
                                 <h3>01</h3>
                             </div>
-                            <div class="rightccontent">
-                                <h3 class="cttle">THE OBSTACLES</h3>
+                            <div className="rightccontent">
+                                <h3 className="cttle">THE OBSTACLES</h3>
                                 <p>Arena Animation's biggest challenge was SEO. After considerable investigation and evaluating
                                     the latest data analytics, we found that their website needed on-page and off-page SEO.
                                     Arena's main objective was to exhibit its actual offerings and prospects through trust and
@@ -76,24 +76,24 @@ export default function Arena() {
                                     generating search engine-optimized leads are their key problems. </p>
                             </div>
                         </div>
-                        <div class="caseimg innerdiv">
-                            <img src={require("../assets/images/casestudy/Star.svg").default} alt="" class="topstar" />
-                            <img src={require("../assets/images/casestudy/Star.svg").default} alt="" class="bottomstar" />
-                            <img class="cbanner" src={require("../assets/images/casestudy/arenabanner2.webp")} alt="" />
+                        <div className="caseimg innerdiv">
+                            <img src={require("../assets/images/casestudy/Star.svg").default} alt="" className="topstar" />
+                            <img src={require("../assets/images/casestudy/Star.svg").default} alt="" className="bottomstar" />
+                            <img className="cbanner" src={require("../assets/images/casestudy/arenabanner2.webp")} alt="" />
                         </div>
-                        <div class="casegrid innerdiv ncase">
-                            <div class="numberc">
+                        <div className="casegrid innerdiv ncase">
+                            <div className="numberc">
                                 <h3>02</h3>
                             </div>
-                            <div class="rightccontent">
-                                <h3 class="cttle">Neoma Arrives</h3>
+                            <div className="rightccontent">
+                                <h3 className="cttle">Neoma Arrives</h3>
                                 <p>A thorough analysis of arena animation by our experts revealed room for improvement, taking
                                     into mind their prior SEO approaches. On-Page and Off-Page SEO search results were
                                     considered when we implemented our advice. This explanation describes the factors we
                                     considered and the marketing team's improvements.</p>
                                 <p>Large online audiences can connect with websites through SEO strategies since they help
                                     websites rank higher in search results.</p>
-                                <div class="bulletlist starlist">
+                                <div className="bulletlist starlist">
                                     <h4>On-page SEO</h4>
                                     <p>Vital for search engines to understand and rank your content for relevant keywords. We
                                         completed the HTML tag content appropriately.</p>
@@ -127,13 +127,13 @@ export default function Arena() {
                                 </div>
                             </div>
                         </div>
-                        <div class="casegrid innerdiv ncase">
-                            <div class="numberc nodasline">
-                                <img class="str" src={require("../assets/images/casestudy/Star.svg").default} alt="" />
+                        <div className="casegrid innerdiv ncase">
+                            <div className="numberc nodasline">
+                                <img className="str" src={require("../assets/images/casestudy/Star.svg").default} alt="" />
                                 <h3>03</h3>
                             </div>
-                            <div class="rightccontent">
-                                <h3 class="cttle">IN SUMMARY</h3>
+                            <div className="rightccontent">
+                                <h3 className="cttle">IN SUMMARY</h3>
                                 <p>Our committed marketing team conducted an in-depth market study on animation marketing trends to determine the factors that could accelerate their overall SEO growth. Trends in marketing shift regularly. Paid advertising is proven to produce quality leads, but the company's brand is enhanced by higher organic search results. Word-of-mouth brand development was the most effective strategy for controlling the market. The objectives of Arena Animation were fulfilled, and they made significant financial savings on sponsored advertisements for their multiplatform online business. </p>
                             </div>
                         </div>

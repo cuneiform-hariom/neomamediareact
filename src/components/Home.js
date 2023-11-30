@@ -1,4 +1,4 @@
-import { useRef, useEffect, useState } from 'react';
+import { useRef, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Link } from "react-router-dom";
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
@@ -48,38 +48,33 @@ export default function Home() {
   }, []);
 
 
-  const racesRef = useRef(null);
-
+  const sectionRail = useRef(null);
   useEffect(() => {
-    const races = racesRef.current;
+    const sections = gsap.utils.toArray(".singlepro");
 
-    const getScrollAmount = () => {
-      let racesWidth = races.scrollWidth;
-      return -(racesWidth - window.innerWidth);
+    const sectionsRail = sectionRail.current;
+
+    gsap.to(sectionsRail, {
+      xPercent: -100 * (sections.length - 1),
+      ease: "none",
+      scrollTrigger: {
+        markers: true,
+        trigger: ".container",
+        pin: true,
+        scrub: true,
+        start: () => "top top",
+        end: () => `+=${sectionsRail.offsetWidth}`,
+      }
+    });
+
+    return () => {
+      const triggerElements = document.querySelectorAll('[data-scrolltrigger]');
+      console.log(triggerElements);
+
+      // Dispose of the ScrollTrigger instance when the component unmounts
+      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
     };
-
-    const tween = gsap.to(races, {
-      x: getScrollAmount,
-      duration: 3,
-      ease: 'none',
-    });
-
-    ScrollTrigger.create({
-      trigger: races,
-      start: 'top 0',
-      end: () => `+=${getScrollAmount() * -1}`,
-      // pin: true,
-      animation: tween,
-      scrub: 1,
-      invalidateOnRefresh: true,
-    });
   }, []);
-
-  // hero banner stars start
-
-  
-  // hero banner stars end
-
 
   return (
     <>
@@ -110,8 +105,8 @@ export default function Home() {
       </div>
 
       {/* <!-- project section slider start --> */}
-      <div>
-        <div className="projsec" ref={racesRef}>
+      <div className="container">
+        <div className="projsec" ref={sectionRail}>
           <div className="singlepro pr_1">
             <img src={require("../assets/images/casestudy/Arenabanner.webp")} alt="" />
             <div className="p_tags">
@@ -119,7 +114,7 @@ export default function Home() {
             </div>
             <div className="p_details">
               <h3>Arena Animation</h3>
-              <a href="./arenacasestudy.php" className="y_btn btn"><span>View Project</span> ⇾</a>
+              <Link to="/arena" className="y_btn btn"><span>View Project</span> ⇾</Link>
             </div>
           </div>
           <div className="singlepro pr_2">
@@ -130,7 +125,7 @@ export default function Home() {
             </div>
             <div className="p_details">
               <h3>Sankalp</h3>
-              <a href="./sankalpcasestudy.php" className="y_btn btn"><span>View Project</span> ⇾</a>
+              <Link to="/sankalp" className="y_btn btn"><span>View Project</span> ⇾</Link>
             </div>
           </div>
           <div className="singlepro pr_3">
@@ -141,7 +136,7 @@ export default function Home() {
             </div>
             <div className="p_details">
               <h3>Floraison Herbals</h3>
-              <a href="./floraisoncasestudy.php" className="y_btn btn"><span>View Project</span> ⇾</a>
+              <Link to="/floraison" className="y_btn btn"><span>View Project</span> ⇾</Link>
             </div>
           </div>
           <div className="singlepro pr_4">
@@ -152,7 +147,7 @@ export default function Home() {
             </div>
             <div className="p_details">
               <h3>Sam's </h3>
-              <a href="./samscasestudy.php" className="y_btn btn"><span>View Project</span> ⇾</a>
+              <Link to="/sams" className="y_btn btn"><span>View Project</span> ⇾</Link>
             </div>
           </div>
         </div>

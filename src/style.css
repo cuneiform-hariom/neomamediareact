@@ -252,8 +252,6 @@ a {
 
 .projsec {
   display: flex;
-  position: sticky;
-  top: 0;
 }
 .projsec .singlepro {
   width: 100vw;
